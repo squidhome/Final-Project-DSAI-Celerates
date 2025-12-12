@@ -248,7 +248,7 @@ def calculate_hybrid_score(cv_text, jd_text):
 # =========================================================
 
 with st.sidebar:
-    st.markdown("### 🤖 CareerLift AI")
+    st.markdown("### 🤖 AIRIE SCAN")
     st.info("""
     **Fitur Utama:**
     * **AI Matching:** Memahami konteks pengalaman.
