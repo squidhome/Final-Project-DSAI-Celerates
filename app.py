@@ -317,7 +317,7 @@ if analyze_btn:
                 st.markdown(f"""
                 <div class="score-card">
                     <div class="score-label">Total Match Score</div>
-                    <div class="score-value">{final_score}%</div>
+                    <div class="score-value">{final_score:.2f}%</div>
                 </div>
                 """, unsafe_allow_html=True)
                 
@@ -333,11 +333,11 @@ if analyze_btn:
                 st.markdown("#### 📊 Performance Breakdown")
                 
                 # Breakdown Items
-                st.write(f"**🤖 AI Semantic Match** ({ai_score}%)")
+                st.write(f"**🤖 AI Semantic Match** ({ai_score:.2f}%)")
                 st.progress(int(ai_score))
                 st.caption("Kecocokan berdasarkan makna kalimat & konteks pengalaman.")
                 
-                st.write(f"**🔑 Keyword Coverage** ({kw_score}%)")
+                st.write(f"**🔑 Keyword Coverage** ({kw_score:.2f}%)")
                 st.progress(int(kw_score))
                 st.caption("Persentase skill wajib yang terpenuhi.")
 
